@@ -1,0 +1,142 @@
+.contact {
+  background: linear-gradient(135deg, #667eea 0%, #00f2fe 50%, #764ba2 100%);
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.contact-intro {
+  font-size: 1.2rem;
+  margin-bottom: 50px;
+  opacity: 0.9;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  margin-bottom: 60px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  text-align: left;
+}
+
+.contact-icon {
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+.contact-details h4 {
+  margin-bottom: 5px;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.contact-details a,
+.contact-details span {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.3s ease;
+}
+
+.contact-details a:hover {
+  opacity: 0.8;
+}
+
+.social-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.social-section h3 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.social-links {
+  display: flex;
+  gap: 20px;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.social-link:hover {
+  transform: scale(1.1);
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.contact-cta {
+  margin-top: 40px;
+}
+
+.contact-cta p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .contact-item {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .social-links {
+    gap: 15px;
+  }
+
+  .social-link {
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+  }
+
+  .contact-intro {
+    font-size: 1.1rem;
+  }
+}

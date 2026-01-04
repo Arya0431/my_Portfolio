@@ -1,0 +1,185 @@
+.experience {
+  background: white;
+  padding: 100px 0;
+}
+
+.experience-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.timeline {
+  position: relative;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 15px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #e2e8f0;
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 50px;
+  margin-bottom: 40px;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: 7px;
+  top: 8px;
+  width: 16px;
+  height: 16px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+}
+
+.timeline-content {
+  background: #fafafa;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.experience-header h3 {
+  color: #2d3748;
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.period {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.timeline-content h4 {
+  color: #667eea;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+.timeline-content p {
+  color: #718096;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.experience-type {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.experience-type.internship {
+  background: #e6fffa;
+  color: #065f46;
+}
+
+.experience-type.training {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.achievements {
+  background: #fafafa;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.achievements h3 {
+  color: #2d3748;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.achievements-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.achievement-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.achievement-item i {
+  color: #f59e0b;
+  font-size: 1.2rem;
+  width: 20px;
+}
+
+.achievement-item span {
+  color: #4a5568;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .experience-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .timeline::before {
+    left: 12px;
+  }
+
+  .timeline-item {
+    padding-left: 40px;
+  }
+
+  .timeline-item::before {
+    left: 4px;
+    width: 14px;
+    height: 14px;
+  }
+
+  .experience-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .period {
+    align-self: flex-start;
+  }
+
+  .achievements-list {
+    gap: 15px;
+  }
+
+  .achievement-item {
+    padding: 12px;
+  }
+}

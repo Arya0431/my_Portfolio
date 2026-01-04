@@ -1,0 +1,27 @@
+{
+    "name": "aditya-portfolio",
+    "version": "1.0.0",
+    "description": "Portfolio website for Aditya Kumar Chaudhary",
+    "main": "index.js",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview",
+        "start": "npm run preview"
+    },
+    "dependencies": {
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
+    },
+    "devDependencies": {
+        "@vitejs/plugin-react": "^4.0.0",
+        "vite": "^4.3.9"
+    },
+    "keywords": [
+        "portfolio",
+        "react",
+        "web-development"
+    ],
+    "author": "Aditya Kumar Chaudhary",
+    "license": "MIT"
+}
