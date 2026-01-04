@@ -44,6 +44,16 @@ A modern, responsive portfolio website showcasing my skills, projects, and exper
    npm run dev
    ```
 
+   **OR use the auto-start script:**
+   ```bash
+   # For automatic setup and start
+   npm run auto-dev
+
+   # OR double-click the script file
+   ./start-dev.sh  # (macOS/Linux)
+   start-dev.bat   # (Windows)
+   ```
+
 4. **Open your browser**
 
    Navigate to `http://localhost:5173` to view the portfolio.
@@ -54,6 +64,21 @@ A modern, responsive portfolio website showcasing my skills, projects, and exper
 - `npm run build` - Build the project for production
 - `npm run preview` - Preview the production build locally
 - `npm run start` - Alias for preview (for deployment compatibility)
+- `npm run auto-dev` - Automatically install dependencies and start dev server
+- `npm run dev:bg` - Start dev server in background
+
+## 🤖 Automatic Startup
+
+### Quick Start Scripts
+- **macOS/Linux**: Double-click `start-dev.sh` or run `./start-dev.sh`
+- **Windows**: Double-click `start-dev.bat` or run `start-dev.bat`
+
+### System Integration
+- **macOS**: Copy `portfolio-dev.plist` to `~/Library/LaunchAgents/` and run:
+  ```bash
+  launchctl load ~/Library/LaunchAgents/portfolio-dev.plist
+  ```
+- **Windows**: Create a shortcut to `start-dev.bat` in your Startup folder
 
 ## 🏗️ Project Structure
 
@@ -77,6 +102,11 @@ src/
 ```
 
 ## 🎨 Customization
+
+#### Images and Assets
+- Place profile images in `src/assets/images/`
+- Import images in components using: `import imageName from '../assets/images/filename.png'`
+- Never use absolute paths like `/src/assets/...` - they won't work in production
 
 ### Personal Information
 

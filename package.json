@@ -3,12 +3,14 @@
     "version": "1.0.0",
     "description": "Portfolio website for Aditya Kumar Chaudhary",
     "main": "index.js",
-    "scripts": {
-        "dev": "vite",
-        "build": "vite build",
-        "preview": "vite preview",
-        "start": "npm run preview"
-    },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "npm run preview",
+    "auto-dev": "./start-dev.sh",
+    "dev:bg": "npm run dev &"
+  },
     "dependencies": {
         "react": "^18.2.0",
         "react-dom": "^18.2.0"

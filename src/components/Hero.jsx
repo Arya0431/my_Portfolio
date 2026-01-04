@@ -1,5 +1,6 @@
 import React from 'react';
 import './Hero.css';
+import profileImage from '../assets/images/profile.png';
 
 const Hero = () => {
     const scrollToSection = (sectionId) => {
@@ -32,7 +33,7 @@ const Hero = () => {
                     <div className="hero-image">
                         <div className="hero-avatar">
                             <img
-                                src="/src/assets/images/profile.png"
+                                src={profileImage}
                                 alt="Aditya Kumar Chaudhary"
                                 className="profile-image"
                             />
